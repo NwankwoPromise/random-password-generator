@@ -49,5 +49,5 @@ function copyPassword2() {
 
 document.getElementById("my-btn").addEventListener("click", renderRandomPassword)
 
-// document.getElementbyId("copy-btn1").addEventListener("click", copyPassword1)
+document.getElementbyId("copy-btn1").addEventListener("click", copyPassword1)
 // document.getElementbyId("copy-btn2").addEventListener("click", copyPassword2)
