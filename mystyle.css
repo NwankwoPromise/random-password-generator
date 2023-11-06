@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
-::selection {
-background: transparent;
-}
+
 body{
     margin: 0;
     padding: 0;
@@ -138,6 +136,9 @@ input {
     font-size: 17px;
     font-family: 'Inter', sans-serif;
     user-select: none;
+    -moz-user-select: none; /* firefox specific */
+    -webkit-user-select: none; /* Chrome, Opera and Safari*/
+    -ms-user-select: none; /* IE, ms-edge */
 /*     animation: flash ease-out 1s; */
     /* outline: 1px solid white */
 }
@@ -150,6 +151,7 @@ input {
     margin-right: 3px;
     cursor: pointer;
 }
+-webkit-tap-highlight-color: transparent;
 
 @keyframes slide-in {
     from{
