@@ -40,6 +40,7 @@ function copyPassword1() {
   randomPassword1.select()
   randomPassword1.setSelectionRange(0, 99999)
   document.execCommand('copy')
+  console.log('copied!')
 }
 function copyPassword2() {
   randomPassword2.select()
