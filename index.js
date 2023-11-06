@@ -41,6 +41,13 @@ function copyPassword1() {
   randomPassword1.setSelectionRange(0, 99999)
   document.execCommand('copy')
 }
+function copyPassword2() {
+  randomPassword2.select()
+  randomPassword2.setSelectionRange(0, 99999)
+  document.execCommand('copy')
+}
 
-document.getElementbyId("copy-btn").addEventListener("click", copyPassword1)
 document.getElementById("my-btn").addEventListener("click", renderRandomPassword)
+
+document.getElementbyId("copy-btn1").addEventListener("click", copyPassword1)
+document.getElementbyId("copy-btn2").addEventListener("click", copyPassword2)
