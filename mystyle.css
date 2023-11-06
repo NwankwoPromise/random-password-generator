@@ -93,6 +93,10 @@ button:hover {
     box-shadow: none;
     outline: 1px solid white;
 }
+input {
+    border: none;
+    outline: none;
+}
 
 .line {
     width: 446px;
