@@ -35,4 +35,12 @@ function renderRandomPassword() {
   renderRandomPassword2();
 }
 
+// copies password on click 
+function copyPassword1() {
+  randomPassword1.select()
+  randomPassword1.setSelectionRange(0, 99999)
+  document.execCommand('copy')
+}
+
+document.getElementbyId("copy-btn").addEventListener("click", copyPassword1)
 document.getElementById("my-btn").addEventListener("click", renderRandomPassword)
